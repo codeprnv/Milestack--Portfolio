@@ -44,18 +44,21 @@ const ContactSection = () => {
 				/>
 			);
 			// console.log("Type of emailHtml: ", typeof emailHtml); // should be "string"
-			const response = await fetch("http://localhost:5000/api/email", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({
-					name: form.name,
-					email: form.email,
-					message: form.message,
-					html: emailHtml, // Sending rendered HTML
-				}),
-			});
+			const response = await fetch(
+				`${import.meta.env.VITE_API_BASE_URL}/api/email`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						name: form.name,
+						email: form.email,
+						message: form.message,
+						html: emailHtml, // Sending rendered HTML
+					}),
+				}
+			);
 			if (response.ok) {
 				toast.success("🚀 Message sent successfully!");
 				setForm({ name: "", email: "", message: "" });

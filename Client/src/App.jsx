@@ -8,6 +8,7 @@ import ProjectSection from "./sections/ProjectSection";
 import TechStack from "./sections/TechStack";
 import ContactSection from "./sections/ContactSection";
 import FooterSection from "./sections/FooterSection";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
 	return (
@@ -18,9 +19,10 @@ const App = () => {
 			{/* <LogoSection /> */}
 			<FeatureCards />
 			<ProjectSection />
-      <TechStack />
-      <ContactSection />
-      <FooterSection/>
+			<TechStack />
+			<ContactSection />
+			<FooterSection />
+			<Analytics />
 		</>
 	);
 };

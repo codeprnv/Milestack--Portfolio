@@ -6,7 +6,7 @@ Hi, I'm Pranav 👋 and this is **Milestack** — my personal 3D portfolio proje
 
 ## 📸 Homepage Preview
 
-![Milestack Homepage](https://raw.githubusercontent.com/codeprnv/Milestack--Portfolio/blob/master/assets/screenshots/homepage.png)
+![Milestack Homepage](https://raw.githubusercontent.com/codeprnv/Milestack--Portfolio/master/assets/screenshots/homepage.png)
 
 ---
 

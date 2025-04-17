@@ -1,0 +1,42 @@
+# === General ===
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Environment Variables ===
+.env
+**/.env
+
+# === Node Modules ===
+Client/node_modules/
+Server/node_modules/
+
+# === Build Outputs ===
+Client/dist/
+Client/.vite/
+Server/build/
+Server/dist/
+
+# === OS or Editor Artifacts ===
+.vscode/
+.idea/
+
+# === Dependency Locks (optional) ===
+# Uncomment if you don’t want to track lock files (not usually recommended)
+# Client/package-lock.json
+# Client/yarn.lock
+# Server/package-lock.json
+# Server/yarn.lock
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Others (optional) ===
+*.bak
+*.zip
+*.tar.gz
